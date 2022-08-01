@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}   
+
+/* ################# HTML ELEMENT STYLE #################### */
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+}  
+html{
+    font-size: 62.5%;
+}
+
+
+a{
+    font-size: 1.6rem;
+   text-decoration: none;
+} 
+
+p, li{
+    font-size: 1.6rem; 
+    margin-bottom: 0.5em; 
+    letter-spacing: 0.15em; 
+}
+h1 h2 h3{
+    margin-bottom: 0.5em; 
+    letter-spacing: 0.15em; 
+    font-weight: 500;
+}  
+/* .header .logo,
+.header .navbar a{
+    color: white;  
+
+}  */ 
+
+
+
+     /* ###################### UTILITY CLASS ####################### */
+.lg-heading{
+    font-size: 3.5rem;
+}  
+
+.md-heading{
+    font-size: 2.2rem;
+}
+ 
+.text-red{
+    color: #e63946;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.bg-dark{
+    background: #263238;
+}
+
+ul li{
+    list-style: none; 
+} 
+  
+.text-decoration{
+    text-decoration: none;
+}
+
+.text-centre{
+    text-align: center;
+}
+
+.container{
+    max-width: 1200px; 
+    width: 90%; 
+    margin: 0 auto; 
+   
+} 
+
+.btn{
+    display: inline-block; 
+    padding: 0.5em 1.5em; 
+    font-weight: 500; 
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: white;    
+    border-radius: 10em; 
+    border: 2px solid #e63946 ;
+    /* color: ; */
+} 
+
+.btn-primary:hover{
+    background-color: #ddd; 
+}
+
+.btn-secondary{
+    border: 2px solid #e63946; 
+    border-radius: 2000%; 
+    color: #e63946; 
+    background-color: white;
+}
+ 
+.btn-secondary:hover{
+    background-color: #fcf3f2; 
+}
+
+/* ############## HEADER STYLING ################# */
+
+.header-content{ 
+    position: absolute;
+   text-align: center; 
+ 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.069), rgba(0,0,0,0.069));
+} 
+
+.header{
+    height: 95vh; 
+   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) ,url('../img/header6-image.png ');      
+   background-position: center; 
+   background-size: cover; 
+   background-repeat: no-repeat; 
+   position: relative;
+}        
+.navbar{
+   
+    padding: 1rem; 
+}
+     .navbar .logo{
+        float: left; 
+        font-size: 3.5rem;
+    } 
+
+     .navbar .nav-items{
+        float: right;  
+        margin-top: 1rem;
+        text-transform: uppercase; 
+        
+    }  
+
+   
+
+     i{
+        color: rgb(255, 255, 251);
+    }
+
+    .navbar::after{
+        content: ''; 
+        display: block; 
+        clear: both;
+    } 
+    .navbar .nav-item{
+        display: inline-block;    
+       
+        padding: 1rem;
+    }
+
+    .navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4; 
+    text-decoration: none;
+}  
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid #fff ;
+}  
+
+.header-content h1{
+    text-transform: uppercase; 
+    font-weight: 700;
+} 
+.header-content p{
+    text-transform: uppercase; 
+  
+} 
+
+/* ################## SHOW CASE SECTION STYLING ################# */ 
+
+.showcase{
+    background: #ddd; 
+    padding: 10rem 0;
+} 
+
+.row{
+    height: 35rem;  
+    background: #fff; 
+    box-shadow: 0px 0px 20px 0px #aaa;
+    /* border: 2px solid red;  */
+}
+
+.row1{
+    margin-bottom: 10rem; 
+    
+}
+
+.row1 .img-box, .row2 .text-box{ 
+    float: left;  
+    width: 50%; 
+    
+}
+
+.row2 .img-box,.row1 .text-box{ 
+    float: right;  
+    width: 50%; 
+    
+}
+
+    .row .img-box{
+        height: 36rem;                                            
+}  
+
+.row .text-box{
+    /* border: 2px solid blueviolet;  */
+    padding: 3rem; 
+    background: white;
+}
+.row1 .img-box img{  
+    /* display: inline-block; */
+     /* height: 36rem; 
+    width: 59.9rem;  */
+     height: 100%; 
+    width: 100%; 
+} 
+
+.row2 .img-box img{  
+    /* display: inline-block; */
+   /* height: 36rem; 
+    width: 60rem;  */
+     width: 100%; 
+    height: 100%; 
+    /* margin-left: 0.65rem;    */
+}  
+.row .text-box h1{
+    padding: 1rem; 
+    letter-spacing: 0.2em; 
+    text-transform: uppercase;
+}
+ 
+.row .text-box p{
+    padding: 1rem; 
+    letter-spacing: 0.1em; 
+    word-spacing: 2rem; 
+    padding: 1.28em; 
+}
+    /* text-align: center;  
+} */
+ 
+/* #################### FEATURES SECTION STYLING #################### */
+ 
+.features{
+    padding: 10rem 0;
+}
+/* .box-wrapper{
+          border: 6px ridge #333;  
+         box-shadow: 5px 5px 100px 0px rgba(136, 114, 160, 0.83) ; 
+}   */
+ 
+.box-wrapper::after{
+    content: ""; 
+    display: block; 
+    clear: both; 
+} 
+
+.box{         
+    /* float: left;  */
+    display: inline-block;
+    width: 33%;  
+    height: 100%;
+    word-spacing: 1rem; 
+    padding: 1rem;
+} 
+
+.box h2{
+    margin: 1.5rem; 
+    letter-spacing: 0.39rem;  
+    margin-bottom: 3rem; 
+    line-clamp: 3000rem;
+}
+
+.box-1,.box-3{
+    background: #333;  
+}
+
+.box-2{ 
+    
+    background: #e63946;
+}
+
+
+.box-wrapper{
+    background: none;
+}
+/* ####################### footer styling ################### */
+
+.footer{
+    background: #263238; 
+    color: #f4f4f4; 
+    padding: 2rem; 
+    text-align: center; 
+    margin: 4rem;
+} 
+.social-media-links i{
+    margin: 2rem;
+}
+
+/* ################## ABOUT PAGE STYLING#################### */
+.about{
+    padding: 5rem 0rem;  
+    padding-top: 2rem;
+   
+}
+
+.about-heading{ 
+    margin-bottom: 2rem;
+    /* text-decoration: underline #e63946 6px; */
+    /* border-bottom: 6px solid #e63946; */
+}
+
+.about-heading::after{
+    content: ''; 
+    display: block; 
+    border: 3px solid #e63946; 
+    width: 100%;
+}
+
+/* ########################## ABOUT WRAPPER #####################  */
+
+.about-wrapper{
+    /* border: 2px solid black;  */
+    text-align: center; 
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float: left; 
+    width: 50%;
+}
+ 
+.about-wrapper .right{
+    float: right; 
+    width: 50%;
+}
+
+.about-wrapper::after{
+    content: "";
+    display: block; 
+    clear: both;
+}
+
+.about-wrapper li::before{
+    content: '\2713'; 
+    color: #e63946; 
+    font-weight: bold; 
+    padding-right: 1rem;
+}
+ 
+.counts .count-item{
+    float: left; 
+    width: 25%;
+}
+
+.counts .count-item::after{
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+
+.counts { 
+   
+    margin-bottom: 4rem; 
+    padding: 3rem;
+    padding-bottom: 8rem;
+}
+ 
+ .counts .count-item span{
+      font-weight: 530;
+}
+
+.cta-banner{
+    background: #e63946; 
+    width: 100%; 
+    /* height: 10rem;  */ 
+    
+    padding: 3rem; 
+    box-shadow: 5px 5px 100px 0px rgba(136, 114, 160, 0.83) ;
+}
+ 
+.cta-banner-left{    
+    float: left; 
+    width: 60%; 
+    text-align: left;
+} 
+
+.cta-banner-right{  
+    text-align: right;
+    float: right; 
+    width: 40%;  
+    letter-spacing: 0.8rem;
+}
+ 
+.cta-banner-right a{
+    
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-weight: 500; 
+    border: 4px solid #fcf3f2; 
+    padding: 1rem 5rem;
+}
+.cta-banner::after{
+    content: ''; 
+    display: block; 
+    clear: both;
+} 
+
+/* .btn-cta{
+    text-align: center; 
+    display: inline-block; 
+    font-weight: 700; 
+    font-size: 3rem;
+} */ 
+
+/* ################## CONTACT PAGE STYLING #################### */ 
+
+.contact-form{
+    padding: 5rem 0; 
+    background: #f7f7f7;
+} 
+
+/* .form-wrapper{
+     border: 10px solid red;  
+}   */
+
+.form-wrapper::after{
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+.form-wrapper .company-address{ 
+    background: #fff;
+    width: 49%;
+    float: left;  
+    height: 680px;
+    /* padding: 2rem; 
+    margin: 2rem; */
+} 
+
+
+.form-wrapper .company-address .photo::after{
+    content: none; 
+    display: block; 
+    clear: both;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+
+
+.form-wrapper .company-address img{
+    max-width: 96% ; 
+    min-height: 40rem;  
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.form-wrapper .company-address i{
+    display: inline-block; 
+    margin-right: 1rem;
+}
+
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* ################### FORM STYLING ##################  */
+
+.form-wrapper .form{ 
+    background: #fff;
+    width: 49%;
+    float: right;   
+    padding: 1rem ;
+    height: 680px;
+} 
+ 
+
+.form-wrapper .form::after{
+    content: '';
+    display: block;  
+    clear: both;  
+}
+
+.form h2::after{
+    content: ''; 
+    display: block;  
+    border-bottom: 6px solid #e63946;
+    /* width: 100%;  */
+    height: 100%;
+}
+
+.form h2{
+    letter-spacing: 0.5rem;
+}
+
+.form-wrapper .form label{
+    display: block; 
+    letter-spacing: 0.2rem; 
+    font-size: 2rem;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem; 
+    width: 100%;  
+    margin-bottom: 1rem; 
+    font-size: 2rem;
+}
+
+.form-wrapper.form .form-group{
+    margin-bottom: 1.2rem;
+}
+
+.form-wrapper .form label::after{
+    content: '* '; 
+    color: #e63946;
+} 
+.form-wrapper .form textarea{
+    width: 100%; 
+    height: 330px; 
+    padding: 1rem;
+}
+
+.photo{
+    float: right;
+    width: 9rem; 
+    margin-bottom: 2rem;  
+    margin-top: 0.25rem;
+} 
+
+.shruti{
+    float: left;
+    width: 9rem; 
+    margin-bottom: 2rem;  
+    margin-top: 0.25rem;
+}
+
+.form-btn { 
+    display: block; 
+    margin: 1rem auto; 
+    padding: 0.5em 3em;  
+    font-size: 1.8rem; 
+    text-transform: uppercase; 
+    background: #ec4b59; 
+    color: #fff;  
+    width: 30%; 
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ######################## MEDIA QUERE ########################### */   
+
+   @media(max-width: 50rem){
+   
+    html{
+        font-size: 50%; 
+        width: 100%;  
+        height: 100%;
+    }  
+
+    .box-wrapper{
+        border: none;  
+        box-shadow: none ;
+    } 
+    
+    .navbar .nav-items, .navbar .logo{
+        float: none;   
+        display: block; 
+        width: 100%;
+        text-align: center;    
+    }
+
+    .row{
+        height: 2%; 
+        width: 100%;
+    }  
+   
+    .row .img-box, 
+    .row .text-box{
+        float: none; 
+        width: 100%;  
+        text-align: center;  
+    }
+
+    .features .box{
+        float: none;   
+        width: 100%; 
+        text-align: center;   
+        border: 8px ridge #333;  
+        box-shadow: 5px 5px 100px 0px rgba(136, 114, 160, 0.83) ;
+        
+    }
+
+    .counts .count-item{
+        float: none; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    .features .box-wrapper .box-2,
+    .features .box-wrapper .box-3{
+        margin-top:2rem;
+    }
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    } 
+    
+    .cta-banner-left{
+        padding-bottom: 2rem;
+    } 
+
+    .form-wrapper .company-address{
+        float: none;   
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none; 
+        width: 100%;
+        height: auto;
+    }
+} 
+ 
+     /* @media(min-width: 501px) and (max-width:780px){  
+     html{
+        font-size: 50%;
+    }
+
+    .box-wrapper{
+        border: none;  
+        box-shadow: none ;
+    } 
+
+    .navbar .nav-items, .navbar .logo{
+        float: none;   
+        display: block; 
+        width: 100%;
+        text-align: center;    
+    }
+
+    .row{
+        
+        width: 100%;
+    }  
+   
+    .row .img-box, 
+    .row .text-box{
+        float: none; 
+        width: 100%;  
+        text-align: center;  
+    }
+
+    .features .box{
+        float: none;   
+        width: 100%; 
+        text-align: center;   
+        border: 8px ridge #333;  
+        box-shadow: 5px 5px 100px 0px rgba(136, 114, 160, 0.83) ;
+        
+    }
+
+    .counts .count-item{
+        float: none; 
+        width: 100%; 
+        text-align: center;
+    }
+
+    .features .box-wrapper .box-2,
+    .features .box-wrapper .box-3{
+        margin-top:2rem;
+    }
+    .cta-banner-left,
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    } 
+    
+    .cta-banner-left{
+        padding-bottom: 2rem;
+    } 
+
+    .form-wrapper .company-address{
+        float: none;   
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none; 
+        width: 100%;
+        height: auto;
+    }
+} 
+ */
+
+    @media(min-width: 769px) and (max-width: 1200px) {
+    html{
+        font-size: 56.25%;
+    }
+} 
+
